@@ -1,3 +1,4 @@
+// -------------------------------------------------------------
 // Since injected functions with chrome content scripts are a copy, not a reference,
 // trying to access any functions or variables out of this scope wouldn't work.
 // So everything will go inside removeAmazonAds().
@@ -43,6 +44,7 @@ async function removeAmazonAds() {
     verifyAdDeletion()
 }
 
+// -------------------------------------------------------------
 // Injects removeAmazonAds into targeted tab.
 async function injectScript(tab) {
     return await chrome.scripting.executeScript({
