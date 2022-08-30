@@ -1,0 +1,31 @@
+{
+  "name": "Remove Rainforest Sponsored Results",
+  "description": "Remove unsolicited sponsored items from search results on a particular shopping site.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.amazon.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/walls_of_text16.png",
+      "32": "/images/walls_of_text32.png",
+      "48": "/images/walls_of_text48.png",
+      "128": "/images/walls_of_text128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/walls_of_text16.png",
+    "32": "/images/walls_of_text32.png",
+    "48": "/images/walls_of_text48.png",
+    "128": "/images/walls_of_text128.png"
+  }
+}
